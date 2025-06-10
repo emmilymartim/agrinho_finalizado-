@@ -1,0 +1,41 @@
+
+.botao{
+    display: inline-block;
+    padding: 16px 30px;/*espaçamento interno pra cima e pra baixo e direita e esquerda*/
+    background: linear-gradient(var(--cor-botao-fundo), var(--cor-botao-fundo2));
+    border-radius: 4px;
+    /*valor são -  x(horizontal) -  y(vertical) blur - tamanho fonte*/
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);/*colocanco uma sombra de fundo no botão*/
+    text-transform: uppercase;/*Deixando a letra maiúscula*/
+    transition: 1s; /*efeito de trasição 1 segundo o movimento mais suave*/
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.botao:hover{
+    padding: 16px 40px;/*pra cima e pra baixo e direita e esquerda*/
+    background: linear-gradient(var(--cor-botao-fundo3), var(--cor-botao-fundo4));
+
+}
+
+.saiba {
+    color: var(--cor-texto4);
+    font-size: 18px;/*tamanho da fonte*/
+    font-weight: bold;/*espessura da fonte como negrito*/
+    line-height: 1.33;/*espaçamento entre as linhas*/
+}
+.mais {
+    color: var(--cor-texto);
+    font-size: 18px;/*tamanho da fonte*/
+    font-weight: bold;/*espessura da fonte como negrito*/
+    line-height: 1.33;/*espaçamento entre as linhas*/
+}
+
+
+/*estilização para o botão saiba mais*/
+@media(max-width: 600px){
+    .botao{
+    padding: 12px 20px;/*pra cima e pra baixo e direita e esquerda*/
+        font-size: 16px;
+    }
+}

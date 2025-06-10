@@ -1,0 +1,153 @@
+
+/*------------Iniciando o cabeçalho ----HEADER----------------------------*/
+span {
+    color: var(--cor-texto2);
+    font-weight: bold;
+}
+
+/*header-logo a imagem do tigre*/
+.header-logo {
+    width: 150px;
+}
+
+.header-logo-drone {
+    width: 200px;
+    border: 3px solid var(--cor-botao-fundo2);
+    border-radius: 100%;
+    background-color: #fff3e0;
+    background: linear-gradient(#fff3e0, var(--cor-botao-fundo4));
+
+}
+
+
+/*Codificando o header no html */
+.header-bg {
+    background-color: var(--cor-de-fundo) ;
+    color: var(--cor-texto);
+    border-bottom: 4px solid var(--cor-botao-fundo2);
+}
+
+
+/*estilizando os elementos da div  com nome class header*/
+.header {
+    display: flex;/*utilizado pata alinhar os elementos lado a lado*/
+    flex-wrap: wrap;/* itens flexíveis são quebrados em várias linhas quando não há espaço suficiente.*/
+    gap: 20px;/*utilizado espaçemento em linha e coluna - bom uso para utilizar flex-wrap: wrap*/
+    justify-content: space-between;/*alinhando os itens horizontalmente*/
+    align-items: center;/*alinhando os itens verticalmente ao centro*/
+    box-sizing: border-box;/*O tamanho total da caixa permanece o mesmo, independentemente do padding e da borda.*/
+    padding: 20px;/*espaçamento interno para todos os lados*/
+    max-width: 1200;/*deixando essa parte até 1200 px*/
+    margin-left: auto;/*deixando de forma automática o espaçamento externo*/
+    margin-right: auto;
+}
+
+/*mudando o tamanho da h1 do header */
+.header-titilo-img{
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 600;
+    
+}
+
+.logo-titulo{
+    display: flex;/*utilizando para alinhar os elementos*/
+    flex-direction: column;/*deixando os elementos dentro dessa div em coluna*/
+    justify-content: center;/*deixando os elementos dentro dessa div alinhandos horizontalmente no centro*/
+    align-items: center;/*deixando os elementos dentro dessa div alinhandos verticalmente no centro*/
+}
+
+/*estilizando os elementos da ul  com nome class header-menu*/
+.header-menu {
+    display: flex;/*colocando os elementos lado a lado*/
+    flex-wrap: wrap;/* itens flexíveis são quebrados em várias linhas quando não há espaço suficiente.*/
+    gap: 40px;/* Espaçamento de 40px entre todas as linhas e colunas */
+}
+
+/*estilizando a tag (a de anchor da lista)*/
+.header-menu a {
+    color: var(--cor-texto);/*cor do texto*/
+    display: inline-block; /*fica em linha e depois em bloco se precisar a utilizar a responsividade desse jeito é melhor*/
+    padding: 16px 0px;/*espaçamento interno top e bottom e 0px direita e esquerda*/
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+/*Crinado uma linha embaixo dos links HOME, Tecnologias, Inovação e Contato do menu*/
+.header-menu a:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--cor-texto2);
+    margin-top: 4px;
+    transition: 0.4s;
+    position: absolute;
+}
+
+/*pseudo classe hover e pseudo elemento after*/
+.header-menu a:hover:after {
+    width: 100%;
+    
+}
+
+/*efeito dos botões da navegação do header trocando a cor do texto*/
+.header-menu a:hover{
+    color: var(--cor-texto2);
+}
+
+/*deixando nosso header responsivo (mobile) utilizando @media*/
+/*quando o tamanho for menor que 800px vai ser aplicada essa codificação abaixo*/
+@media (max-width: 800px) {
+    /*diminuir o espaçamento de linhas e colunas colocando menos no gap do menu*/
+    .header-menu {
+        gap: 20px;
+    }
+
+    /*estilizando a tag a da lista deixando com aparência de botão*/
+    .header-menu a {
+        background-color: var(--cor-de-fundo2);
+        padding: 12px 16px;/*colocando espaçamento interno  12px pra cima e pra baixo - 16px direita e esquerda*/
+        border-radius: 4px;/*arredondar as bordas*/
+
+    }
+
+    /*Estilizando hover dos botões*/
+    .header-menu a:hover {
+        background-color: var(--cor-de-fundo3) ;
+    }
+
+    /*tirando o efeito do botão do pseudo elemento after*/
+    .header-menu a:after {
+        display: none;
+    }
+
+
+ 
+    
+}
+
+/*quando o tamanho for menor que 600px vai ser aplicada essa codificação abaixo*/
+
+@media (max-width: 600px){
+    /*utilizando gap para diminuindo os espaçamentos em linha e em colunas já utilizada antes */
+    .header-menu {
+        gap: 12px;
+    }
+    
+    /*utilizando padding e font-size para diminuir o espaçamento interno e o texto*/
+    .header-menu a {
+        padding: 8px 12px;/*8px espaçamento pra cima e pra baixo  - 12px pra direita e esquerda*/
+        font-size: 14px;
+    }
+
+    /*mudando o tamanho da h1 do header */
+.header-titilo-img{
+    font-size: 14px;
+    
+}
+
+}

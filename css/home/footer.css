@@ -1,0 +1,128 @@
+
+.footer-bg{
+    background-color: var(  --cor-de-fundo2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.footer-logo-drone {
+    width: 200px;
+    border: 3px solid var(--cor-botao-fundo2);
+    border-radius: 100%;
+    background-color: #fff3e0;
+    background: linear-gradient(#fff3e0, var(--cor-botao-fundo4));
+   
+
+}
+
+.footer-cor-contato a {
+    color: var( --cor-texto3);
+}
+
+.footer-contato {
+    color: var( --cor-texto3);
+
+}
+
+.footer-redes img {
+    width: 50px; /*tamanho das imagens das redes sociais*/
+    
+    
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;/*3 colunas*/
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+ 
+}
+
+.footer-direitos{
+    
+  
+    font-size: 16px;
+    
+    color: var(--cor-texto3);
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.footer h3 {
+    margin-bottom: 32px;
+    font-size: 20px;
+    
+    color: var(--cor-texto3);
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+
+.footer-contato ul {
+    margin-bottom: 32px;
+}
+
+.footer-contato li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+    color: var(--cor-texto3);
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+
+.footer-redes {
+    display: flex;/*colocando as imagens das redes sociais lado a lado*/
+    gap: 16px;/*espaçamento em linha e coluna*/
+}
+
+
+/*-----Responsividades------*/
+
+@media(max-width: 900px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+
+    .footer-contato li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-direitos{
+    
+  
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-drone-img {
+        
+      display: flex;
+      justify-content: center;
+    }
+}

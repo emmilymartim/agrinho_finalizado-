@@ -1,0 +1,224 @@
+.tecnologia-bg{
+    background: var(--cor-de-fundo2);
+    /*efeito sombra no inicio do container pra fazer o vídeo vazar*/
+    box-shadow: inset 0 80px var(--cor-texto);
+}
+
+.tecnologia-conteudo{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 10px;
+
+}
+
+.icone-drone {
+    width: 50px;
+}
+
+
+.titulo-tecnologia{
+
+    margin-bottom: 15px;
+    font-size: 32px;/*tamanho da fonte do texto*/
+    line-height: 1.125; /*espaçamento entre as linhas valor absoluto se diminuir a fonte ele muda de acondo com a fonte*/
+    font-family: "Poppins";
+    font-weight: 600;
+    color: var(--cor-texto);
+
+
+}
+
+.texto-tecnologia {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--cor-texto3);
+    font-family: "Roboto";
+    font-weight: 400;
+
+}
+
+.tecnologia {
+    display: grid;/*utilizando grid para criar colunas*/
+    grid-template-columns: 1fr 1fr;/*Criando duas colunas*/
+    gap: 40px;
+}
+
+.drone-video {
+   width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+
+}
+
+
+.avancada{
+    margin-bottom: 20px;
+    display: block;
+}
+.link-botao{
+    margin-bottom: 80px;
+    display: inline-block;
+    color: var( --cor-texto);
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 24px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: var(--cor-de-fundo2);
+    font-weight: bold;
+    font-family: "Poppins";
+    transition: 1s;
+}
+.link-botao:hover{
+    padding: 16px 40px;/*pra cima e pra baixo e direita e esquerda*/
+    background: linear-gradient(var(--cor-botao-fundo3), var(--cor-botao-fundo4));
+}
+
+.icone-drone {
+
+    border: 2px solid var(--cor-botao-fundo4);
+    border-radius: 80%;
+    background-color: var(--cor-de-fundo);
+}
+
+.tecnologia-videos {
+    display: flex;/*colocando os elementos dessA div lado a lado*/
+    gap: 40px;/*espaçamento em linha e coluna*/
+}
+
+
+
+.titulo-tecnologia:hover{
+    color: var( --cor-botao-fundo4);
+
+}
+
+/*criando a responsividade*/
+
+@media(max-width: 450px){
+    .texto-tecnologia {
+        font-size: 15px;
+       }
+    
+       .titulo-tecnologia{
+        font-size: 18px;
+        
+       }
+  
+       .tecnologia-videos {
+        flex-direction: column;
+}
+
+}
+@media(max-width: 600px){
+    .tecnologia-videos {
+        flex-direction: column;
+}
+
+}
+
+
+
+@media(max-width: 800px){
+
+    .tecnologia-video{
+        text-align: center;
+    }
+    .tecnologia-video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .link-botao{
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+    /*tirando a box shadow*/
+    .tecnologia-bg {
+        box-shadow: initial;
+    }
+    
+    .tecnologia {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnologia-conteudo{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .tecnologia-video{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+   .texto-tecnologia {
+    font-size: 16px;
+   }
+
+   .titulo-tecnologia{
+    font-size: 20px;
+    
+   }
+
+   .tecnologia-videos {
+    display: grid;
+    grid-template-columns: 1fr;
+
+   }
+}
+
+
+
+
+/*Parte dos drones e dos vídeos de tecnologias*/
+
+.drone-drone {
+    width: 100%;
+    height: 100%;
+    border: 7px solid #e59317;
+   object-fit: contain;
+   background-color: #ffffff;
+   object-position: 0% 20%;
+}
+
+.tecnologias-tec{
+    width: 100%;
+    
+}
+
+.tecnologias-tec iframe {
+    border: 7px solid  #e59317;
+}
+
+.tec{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   padding-left: 35%;
+   padding-right: 35%;
+   padding-top: 40px;
+   gap: 40px;
+
+    
+}
+
+@media(max-width: 1150px){
+.tec{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tecnologias-tec iframe{
+    width: 300px;
+    
+}
+
+}

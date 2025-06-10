@@ -1,0 +1,133 @@
+
+
+.depoimento {
+    display: grid;/*criando coluna*/
+    grid-template-columns: 1fr 1fr ;/*colocando duas colunas*/
+    background: var( --cor-botao-fundo4);/*cor de fundo*/
+    padding-top:  10px;/*espaçamento interno pra cima*/
+    padding-bottom: 10px;/*espaçamento interno pra baixo*/
+    overflow: hidden;/*se estourar o conainer vai esconder*/
+
+}
+
+
+.depoimento-texto  {
+
+    font-size: 24px; /*tamanho da font do texto*/
+   
+    color: var(  --cor-de-fundo3); /*cor da font do texto*/
+    font-family: "Merriweather", sans-serif; /*font externa*/
+    font-weight: 900;/*texto negrito*/
+    font-style: italic;/*colocando uma font italica*/
+    padding: 40px 40px 80px 80px;
+
+}
+
+.depoimento-texto  p {
+    max-width: 62ch; /*não deixa o texto passar de 62 caracteres e garantir que o texto seja legível e não se estenda demais em telas largas*/
+    align-self: end;
+    position: relative;/*pai do absolute da aspas*/
+}
+
+.depoimento-nome  {
+
+    font-size: 24px;/*tamanho da font*/
+    color: var(--cor-texto4 );
+    font-family: "Roboto";
+    font-weight: 900;/*colocando o texto em negrito*/
+    padding: 0px 0px 80px 80px;
+}
+
+.depoimento img {
+    width: 600px;/*largura */
+    height: 450px;/*altura*/
+    object-fit: cover;/**/
+    border-radius: 8px;/*arredondamento nas bordas*/
+    margin-left: 10px;
+ 
+}
+
+.depoimento-tudo {
+    display: flex;
+    justify-content: space-evenly;/*alinhando espaçamento horizontalmente*/
+    align-items: center;/*alinhamento espaçamento vertical*/
+    gap: 40px;/*espaçamento em linha e coluna*/
+}
+
+.depoimento p::before {/*antes*/
+    content: '“';
+    font-size: 5rem;/*igual a 80px*/
+    color: var(  --cor-botao-fundo3);
+    position: absolute;/*deixando as aspas soltas com absolute*/
+    left: -50px;
+    top: -50px;
+}
+
+.depoimento p::after {/*depois*/
+    content: '”';
+    font-size: 5rem;/*igual a 80px*/
+    color: var(  --cor-botao-fundo3);
+    position: absolute;/*deixando as aspas soltas com absolute*/
+    
+}
+
+/*------------Parte depoimento reponsivo-------------*/
+
+@media(max-width: 800px){
+    .depoimento {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+       
+    }
+
+    .depoimento-texto {
+        align-self: center;
+        font-size: 16px;
+
+    }
+
+    .depoimento-nome {
+        align-self: center;
+      
+        font-size: 14px;
+  
+    }
+
+    .depoimento img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+    .depoimento p::after {/*depois*/
+        content: '”';
+        font-size: 3rem;/*igual a 80px*/
+  
+        
+    }
+
+    .depoimento p::before {/*depois*/
+        content: '“';
+        font-size: 3rem;/*igual a 80px*/
+        left: -18px;
+        top: -18px;
+        
+    }
+}
+
+@media(max-width: 1100px){
+    
+    .depoimento-texto{
+    font-size: 18px;
+    }
+
+    .depoimento-nome{
+        font-size: 18px;
+        }
+    }

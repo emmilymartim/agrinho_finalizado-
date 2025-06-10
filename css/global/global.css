@@ -1,0 +1,59 @@
+
+/*Criando variáveis para utilizar depois*/
+:root {
+
+    --cor-de-fundo: #000000;
+    --cor-de-fundo2: #111111;
+    --cor-de-fundo3: #2e2e2e;
+    --cor-botao-fundo: #ffbb00;
+    --cor-botao-fundo2: #f2a50c;
+    --cor-botao-fundo3: #ffb60d;
+    --cor-botao-fundo4: #e59317;
+
+    --cor-texto:#ffffff;
+    --cor-texto2:#ffbb00;
+    --cor-texto3: #b2b2b2;
+    --cor-texto4: #332200;
+
+
+}
+/*resetando a página body e ul*/
+
+body {
+    margin: 0;/*resetando espaço externo de toda a página*/
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+ul {
+    margin: 0;/*resetando espaço externo*/
+    padding: 0;/*resetando espaço interno*/
+    list-style:none;/*deixando sem estilo*/
+}
+
+a {
+    text-decoration: none;/*deixa sem sublinhado (tira a linha que fica embaixo da palavra)*/
+}
+
+
+
+
+/*-------------------- Parte principal do site main ----------------------------*/
+
+img {
+    width: 100%;
+    /*
+    Ocupação de largura total: Um elemento com display: block ocupa automaticamente toda a 
+    largura disponível do contêiner pai, a menos que uma largura específica seja definida.
+    */
+    display: block;
+}
+
+/*resetando os espaçementos externos das tags abaixo*/
+
+h1, p, blockquote {
+    margin: 0px;
+}
+
+
+
+

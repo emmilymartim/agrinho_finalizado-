@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.drone-video {
+    border: 8px solid #e59317;
+    border-radius: 8px;
+}

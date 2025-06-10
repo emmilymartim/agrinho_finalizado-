@@ -1,0 +1,32 @@
+.vantagens-texto p {
+    
+   
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--cor-texto4);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+}
+
+.vantagens-texto h1 {
+    
+   
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #e59317;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    
+}
+
+main{
+display: flex ;
+
+justify-content:center;
+align-items: center;
+margin: 0 0 auto auto;
+
+}

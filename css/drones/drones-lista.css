@@ -1,0 +1,122 @@
+
+.titulo-drone {
+    margin-bottom: 32px;
+    font-size: 2rem;/*tamanho da fonte do texto 32px*/
+    line-height: 1.125; /*espaçamento entre as linhas valor absoluto se diminuir a fonte ele muda de acondo com a fonte*/
+    font-family: "Poppins";
+    font-weight: 600;
+ 
+}
+
+.titulo-drone {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.texto-item-lista {
+    font-size: 1rem;/*tamanho da fonte do texto 32px*/
+    line-height: 1.125; /*espaçamento entre as linhas valor absoluto se diminuir a fonte ele muda de acondo com a fonte*/
+    font-family: "Poppins";
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+/*criando pseudo elementos criando traço antes do testo*/
+.texto-item-lista::before{
+    content: "";
+    display: inline-block; /* */
+    width: 12px;
+    height: 8px;
+    background: var(--cor-botao-fundo3);
+    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.drones-lista{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+.drones-lista ul {
+    display: flex;
+    gap: 40px;/*espaçamento em linha e coluna*/
+    padding: 0 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.drones-lista img {
+    
+    padding-bottom: 40px;
+    width: 400px;
+    height: 300px;
+
+   
+}
+
+.drones-lista .botao {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+@media(max-width: 450px){
+    .drones-lista{
+        padding-bottom: 60px;
+    }
+
+    .drones-lista ul {
+    flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .drones-lista .botao {
+        display: inline-block;
+    }
+
+}
+
+
+
+@media(max-width: 900px){
+    .drones-lista{
+        padding-bottom: 60px;
+    }
+
+    .drones-lista ul {
+    flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media(max-width: 1200px){
+    .drones-lista{
+        padding-bottom: 60px;
+    }
+
+    .drones-lista ul {
+    flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+
+
+
